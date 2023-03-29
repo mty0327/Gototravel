@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <font android:fontStyle="italic"
+        android:fontWeight="700"
+        android:font="@font/bm11"/>
+    <font android:fontStyle="normal"
+        android:fontWeight="700"
+        android:font="@font/bmpro"/>
+    <font android:fontStyle="normal"
+        android:fontWeight="700"
+        android:font="@font/sc"/>
+</font-family>

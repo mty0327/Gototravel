@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".activities.SearchActivity">
+
+    <TextView
+        android:id="@+id/tv_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="여행할 나라를 검색하세요"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:textColor="@color/blue"
+        android:padding="16dp"
+        android:fontFamily="@font/bm11"
+        android:textAlignment="center"/>
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="48sp"
+        android:hint="국가를 검색하세요"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColorHint="@color/black"
+        android:layout_below="@+id/tv_search"/>
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_search"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="-50dp"
+        app:icon="@drawable/baseline_zoom_in_24" />
+
+</RelativeLayout>
