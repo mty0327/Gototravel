@@ -1,11 +1,12 @@
-package com.mty.myapplication
+package com.mty.myapplication.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.mty.myapplication.R
 
-class SplashActivity : AppCompatActivity() {
+class EmailSigninActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash)
+        setContentView(R.layout.activity_email_signin)
     }
 }
