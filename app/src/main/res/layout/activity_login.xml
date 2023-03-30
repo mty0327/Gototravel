@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.LoginActivity">
+    tools:context=".activities.Activity.LoginActivity">
 
     <TextView
         android:id="@+id/tv_title"
@@ -27,6 +27,7 @@
         android:layout_height="wrap_content"
         android:text="회원가입"
         android:fontFamily="@font/bmpro"
+        android:backgroundTint="@color/yellow"
         android:textColor="@color/black"
         android:background="@drawable/bg_login_btn"
         android:layout_alignParentBottom="true"
@@ -44,6 +45,7 @@
         android:background="@drawable/bg_login_btn"
         android:gravity="center"
         android:padding="8dp"
+        android:backgroundTint="@color/teal_200"
         android:layout_marginLeft="80dp"
         android:layout_marginRight="80dp"
         android:layout_above="@id/tv_signup"

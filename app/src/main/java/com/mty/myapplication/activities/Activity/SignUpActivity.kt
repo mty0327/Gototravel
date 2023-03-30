@@ -1,12 +1,12 @@
-package com.mty.myapplication.activities
+package com.mty.myapplication.activities.Activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.mty.myapplication.R
 
-class EmailSigninActivity : AppCompatActivity() {
+class SignUpActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_email_signin)
+        setContentView(R.layout.activity_sign_up)
     }
 }
