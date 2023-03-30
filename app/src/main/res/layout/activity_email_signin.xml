@@ -63,4 +63,8 @@
         android:layout_marginTop="40dp"
         android:layout_marginLeft="64dp"
         android:layout_marginRight="64dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon3"/>
 </LinearLayout>
