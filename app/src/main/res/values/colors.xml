@@ -13,4 +13,13 @@
     <color name="red">#FF0000</color>
     <color name="green">#008000 </color>
     <color name="yellow">#FFFF96</color>
+    <color name="btn9">#F504D5</color>
+    <color name="btn2">#FF9900</color>
+    <color name="btn3">#FFD500</color>
+    <color name="btn4">#C8FF00</color>
+    <color name="btn5">#00FFBB</color>
+    <color name="btn6">#00D0FF</color>
+    <color name="btn7">#C402FA</color>
+    <color name="btn8">#1606FA</color>
+
 </resources>

@@ -17,39 +17,43 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="일반\n정보"
+        android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_marginTop="150dp"
-        android:background="@drawable/baseline_circle_24"/>
+        android:backgroundTint="@color/red"/>
     <Button
         android:id="@+id/btn2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="공지\n사항"
+        android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_marginTop="150dp"
-        android:layout_marginLeft="120dp"
-        android:background="@drawable/baseline_circle_24"/>
+        android:layout_marginLeft="140dp"
+        android:backgroundTint="@color/btn2"/>
     <Button
         android:id="@+id/btn3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="입국\n허가"
+        android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_marginTop="150dp"
-        android:layout_marginLeft="240dp"
-        android:background="@drawable/baseline_circle_24"/>
+        android:layout_marginLeft="280dp"
+        android:backgroundTint="@color/btn3"/>
     <Button
         android:id="@+id/btn4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="여행\n경보"
+        android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_marginTop="350dp"
-        android:background="@drawable/baseline_circle_24" />
+        android:backgroundTint="@color/btn4" />
     <Button
         android:id="@+id/btn5"
         android:layout_width="wrap_content"
@@ -58,18 +62,20 @@
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_marginTop="350dp"
-        android:background="@drawable/baseline_circle_24"
-        android:layout_marginLeft="120dp"/>
+        android:textColor="@color/black"
+        android:backgroundTint="@color/btn5"
+        android:layout_marginLeft="140dp"/>
     <Button
         android:id="@+id/btn6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="350dp"
+        android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:layout_marginLeft="240dp"
+        android:layout_marginLeft="280dp"
         android:text="특별\n여행"
-        android:background="@drawable/baseline_circle_24"/>
+        android:backgroundTint="@color/btn6"/>
     <Button
         android:id="@+id/btn7"
         android:layout_width="wrap_content"
@@ -78,26 +84,29 @@
         android:textSize="24sp"
         android:textStyle="bold"
         android:text="안전\n공지"
-        android:background="@drawable/baseline_circle_24"/>
+        android:textColor="@color/black"
+        android:backgroundTint="@color/btn7"/>
     <Button
         android:id="@+id/btn8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="550dp"
+        android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:layout_marginLeft="120dp"
-        android:background="@drawable/baseline_circle_24"
+        android:layout_marginLeft="140dp"
+        android:backgroundTint="@color/btn8"
         android:text="현지\n연락" />
     <Button
         android:id="@+id/btn9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="550dp"
+        android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:layout_marginLeft="240dp"
-        android:background="@drawable/baseline_circle_24"
+        android:layout_marginLeft="280dp"
+        android:backgroundTint="@color/btn9"
         android:text="최신\n안전"/>
 
 
