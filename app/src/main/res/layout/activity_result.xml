@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/icon4"
+    android:padding="16dp">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:columnCount="3"
+        android:rowCount="3"/>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="일반\n정보"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/baseline_circle_24"/>
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="공지\n사항"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="120dp"
+        android:background="@drawable/baseline_circle_24"/>
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="입국\n허가"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="240dp"
+        android:background="@drawable/baseline_circle_24"/>
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="여행\n경보"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/baseline_circle_24" />
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="경보\n조정"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/baseline_circle_24"
+        android:layout_marginLeft="120dp"/>
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="240dp"
+        android:text="특별\n여행"
+        android:background="@drawable/baseline_circle_24"/>
+    <Button
+        android:id="@+id/btn7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="안전\n공지"
+        android:background="@drawable/baseline_circle_24"/>
+    <Button
+        android:id="@+id/btn8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="120dp"
+        android:background="@drawable/baseline_circle_24"
+        android:text="현지\n연락" />
+    <Button
+        android:id="@+id/btn9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="240dp"
+        android:background="@drawable/baseline_circle_24"
+        android:text="최신\n안전"/>
+
+
+
+
+</RelativeLayout>
