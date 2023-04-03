@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.fragment.Fragment5">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="경보조정:외교부에서 지정하는 여행 유의, 자제, 제한 등 해외 여행경보 대상국가 목록 및 상세정보를 제공"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:background="@color/btn5"/>
+
+</FrameLayout>

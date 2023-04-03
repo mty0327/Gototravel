@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.fragment.Fragment9">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="최신안전:코로나19 관련된 해외 운항, 입국, 코로나19 관련 등의 국가·지역별 최신안전소식을 제공"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:background="@color/btn9"/>
+
+</FrameLayout>

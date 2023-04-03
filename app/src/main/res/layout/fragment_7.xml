@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.fragment.Fragment7">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="국가∙지역별 각 공관에서 실시간 업데이트 되는 국가별 최신 안전공지를 제공하는 공공데이터 API 서비스"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:background="@color/btn7"/>
+
+</FrameLayout>

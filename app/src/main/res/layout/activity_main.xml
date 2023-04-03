@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@drawable/background"
     tools:context=".activities.Activity.MainActivity">
 
@@ -12,32 +13,31 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="여행할 나라를 검색하세요"
+        android:paddingRight="4dp"
         android:textStyle="bold"
         android:textSize="35sp"
-        android:textColor="@color/blue"
+        android:textColor="@color/purple_200"
         android:padding="16dp"
         android:fontFamily="@font/bm11"
         android:textAlignment="center"/>
-    <EditText
-        android:id="@+id/et_search"
-        android:layout_width="match_parent"
-        android:layout_height="48sp"
-        android:hint="국가를 검색하세요"
-        android:inputType="text"
+
+    <AutoCompleteTextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/auto_re"
+        android:layout_width="fill_parent"
+        android:hint="국가명"
+        android:textSize="18sp"
         android:textStyle="bold"
-        android:textSize="20sp"
-        android:textColorHint="@color/black"
-        android:layout_below="@+id/tv_search"/>
+        android:layout_height="wrap_content" />
 
     <Button
         android:id="@+id/btn_search"
-        android:layout_width="wrap_content"
-        android:layout_height="45dp"
-        android:layout_below="@id/et_search"
-        android:layout_marginLeft="360dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="-43dp"
         android:clickable="true"
         android:hint="검색버튼"
-        android:layout_marginTop="-50dp"
         app:icon="@drawable/baseline_zoom_in_24" />
 
-</RelativeLayout>
+
+</LinearLayout>

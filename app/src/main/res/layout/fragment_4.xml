@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.fragment.Fragment4">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="여행경보:여행경보제도는 특정 국가(지역) 여행·체류시 특별한 주의가 요구되는 국가 및 지역에 내려진 경보 정보를 제공"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:background="@color/btn4"/>
+
+</FrameLayout>
