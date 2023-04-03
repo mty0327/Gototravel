@@ -44,7 +44,7 @@ class EmailSigninActivity : AppCompatActivity() {
                     var id:String= it.documents[0].id //document 명
                     A.userAccount= UserAccount(id, email)
 
-                    val intent: Intent = Intent(this, SearchActivity::class.java)
+                    val intent: Intent = Intent(this, MainActivity::class.java)
 
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)

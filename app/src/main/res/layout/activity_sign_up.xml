@@ -73,6 +73,7 @@
         android:textColor="@color/black"
         android:textStyle="bold"
         android:textAllCaps="false"
+        android:clickable="true"
         android:backgroundTint="@color/yellow"
         android:padding="16dp"
         android:layout_marginTop="40dp"

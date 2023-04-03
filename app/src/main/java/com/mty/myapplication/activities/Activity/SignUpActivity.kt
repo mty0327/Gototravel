@@ -1,6 +1,7 @@
 package com.mty.myapplication.activities.Activity
 
 import android.content.DialogInterface
+import android.content.Intent
 import android.os.Binder
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -39,6 +40,7 @@ class SignUpActivity : AppCompatActivity() {
             binding.etPasswordConfirm.selectAll()
             return
         }
+
         val db= FirebaseFirestore.getInstance()
 
         val user:MutableMap<String, String> = mutableMapOf()
@@ -63,6 +65,7 @@ class SignUpActivity : AppCompatActivity() {
                                     finish()
                                 }
                             }).create().show()
+                        startActivity(Intent(this, MainActivity::class.java))
                     }
 
                 }

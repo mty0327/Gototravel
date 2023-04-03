@@ -58,6 +58,7 @@
         android:textColor="@color/black"
         android:textStyle="bold"
         android:textAllCaps="false"
+        android:clickable="true"
         android:backgroundTint="@color/teal_200"
         android:padding="16dp"
         android:layout_marginTop="40dp"

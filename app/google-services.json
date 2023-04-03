@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "256683921661",
+    "project_id": "myapplicationmty960327",
+    "storage_bucket": "myapplicationmty960327.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:256683921661:android:6b97dc3c4aed63fb596e94",
+        "android_client_info": {
+          "package_name": "com.mty.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "256683921661-1g8ts20coneudqeigiluq20817ugutfs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOqY4IS4RDMTWCB1sRhaFLK10Lo3Rk080"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "256683921661-1g8ts20coneudqeigiluq20817ugutfs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
