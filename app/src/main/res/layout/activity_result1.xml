@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".activities.fragment.Fragment1">
+    tools:context=".activities.Activity.Result1Activity">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:id="@+id/tv_frg1"
         android:layout_width="wrap_content"
@@ -16,4 +18,4 @@
         android:background="@color/red"/>
 
 
-</FrameLayout>
+</LinearLayout>
