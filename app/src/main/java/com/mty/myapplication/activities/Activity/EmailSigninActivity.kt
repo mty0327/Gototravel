@@ -50,7 +50,7 @@ class EmailSigninActivity : AppCompatActivity() {
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
                     startActivity(intent)
                 }else{
-                    AlertDialog.Builder(this).setMessage("이메일과 비밀번호를 다시 확인해주시기 바랍니다.").show()
+                    AlertDialog.Builder(this).setMessage("이메일 또는 비밀번호를 다시 확인해주시기 바랍니다.").show()
                     binding.etEmail.requestFocus()
                     binding.etEmail.selectAll()
                 }
