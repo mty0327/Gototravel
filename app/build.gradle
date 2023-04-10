@@ -51,6 +51,17 @@ dependencies {
     //retrofit2
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.9.0'
+    implementation 'com.google.code.gson:gson:2.10.1'
+
+    //Kakao Login library..
+    implementation "com.kakao.sdk:v2-user:2.13.0" // 카카오 로그인
+
+    //Google Login SDK..
+    implementation 'com.google.android.gms:play-services-auth:20.4.1'
+
+    //Naver Login SDK..
+    implementation 'com.navercorp.nid:oauth:5.4.0' // jdk 11
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
