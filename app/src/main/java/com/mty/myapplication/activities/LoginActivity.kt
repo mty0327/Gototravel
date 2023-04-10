@@ -35,13 +35,13 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        //회원가입 누를 때
+        //회원가입 누르면,
         binding.tvSignup.setOnClickListener{
             //회원가입창으로 화면 전환
             startActivity(Intent(this, SignUpActivity::class.java))
         }
 
-        //이메일 로그인 버튼 누를 때
+        //이메일 로그인 버튼을 누르면,
         binding.layoutEmail.setOnClickListener {
             //이메일 로그인 화면으로 전환
             startActivity(Intent(this, EmailSigninActivity::class.java))
@@ -60,11 +60,11 @@ class LoginActivity : AppCompatActivity() {
             if(token!=null){
                 Toast.makeText(this, "카카오 로그인 성공", Toast.LENGTH_SHORT).show()
 
-                //사용자 정보 요청 [ 1.회원번호, 2.이메일주소 ]
+                //사용자 정보[ 1.회원번호, 2.이메일주소 ]
                 UserApiClient.instance.me { user, error ->
                     if(user!=null){
                         var id:String= user.id.toString()
-                        var email:String= user.kakaoAccount?.email ?: ""  //혹시 null이면 이메일의 기본값은 ""
+                        var email:String= user.kakaoAccount?.email ?: ""  //혹시 없으면 이메일의 기본값은 ""
 
                         Toast.makeText(this, "$email", Toast.LENGTH_SHORT).show()
                         A.userAccount= UserAccount(id, email)
@@ -95,12 +95,12 @@ class LoginActivity : AppCompatActivity() {
         val signInOptions: GoogleSignInOptions = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build()
 
 
-        // 구글 로그인 화면(액티비티)을 실행하는 Intent를 통해 로그인 구현
+        // 구글 로그인 화면을 실행하는 Intent를 통해 로그인 구현
         val intent:Intent= GoogleSignIn.getClient(this, signInOptions).signInIntent
         resultLauncher.launch(intent)
     }
 
-    //구글 로그인 화면(액티비티)의 실행결과를 받아오는 대행사
+    //구글 로그인 화면의 실행결과를 받아오는 대행사
     val resultLauncher: ActivityResultLauncher<Intent> = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult(), object :
             ActivityResultCallback<ActivityResult> {

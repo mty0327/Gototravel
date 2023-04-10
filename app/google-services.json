@@ -14,7 +14,15 @@
       },
       "oauth_client": [
         {
-          "client_id": "256683921661-1g8ts20coneudqeigiluq20817ugutfs.apps.googleusercontent.com",
+          "client_id": "256683921661-tqf0geeisqngpe3drfkvs8lch5hae247.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mty.myapplication",
+            "certificate_hash": "edf65ff464d90a653356c5bc4dda7a36ecd4826f"
+          }
+        },
+        {
+          "client_id": "256683921661-2o52vkp2ebd4esda3m1t50l2fhbkjkpv.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
