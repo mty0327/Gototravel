@@ -1,8 +1,7 @@
-package com.mty.myapplication.activities.Activity
+package com.mty.myapplication.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.mty.myapplication.databinding.ActivityResult5Binding
 import com.mty.myapplication.databinding.ActivityResult6Binding
 import java.io.BufferedReader
 import java.io.IOException

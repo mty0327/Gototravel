@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_gravity="center_horizontal"
-    tools:context=".activities.Activity.SignUpActivity">
+    tools:context=".activities.SignUpActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"

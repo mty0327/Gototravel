@@ -1,4 +1,4 @@
-package com.mty.myapplication.activities.Activity
+package com.mty.myapplication.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

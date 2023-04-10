@@ -1,8 +1,7 @@
-package com.mty.myapplication.activities.Activity
+package com.mty.myapplication.activities
 
 import android.content.DialogInterface
 import android.content.Intent
-import android.os.Binder
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog

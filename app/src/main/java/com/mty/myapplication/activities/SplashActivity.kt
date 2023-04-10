@@ -1,4 +1,4 @@
-package com.mty.myapplication.activities.Activity
+package com.mty.myapplication.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

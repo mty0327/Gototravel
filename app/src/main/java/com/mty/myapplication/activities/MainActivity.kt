@@ -1,4 +1,4 @@
-package com.mty.myapplication.activities.Activity
+package com.mty.myapplication.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
 import android.widget.Button
-import android.widget.MultiAutoCompleteTextView
 import com.mty.myapplication.R
 import com.mty.myapplication.databinding.ActivityMainBinding
 
@@ -55,7 +54,7 @@ class MainActivity : AppCompatActivity() {
             var auto_re : AutoCompleteTextView = findViewById(R.id.auto_re)
             var nation : String = auto_re.text.toString()
 
-            var intent : Intent =  Intent(this,ResultActivity::class.java)
+            var intent : Intent =  Intent(this, ResultActivity::class.java)
             intent.putExtra("country", nation)
 
             startActivity(intent)

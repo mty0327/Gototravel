@@ -31,9 +31,10 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    viewBinding {
-        enabled = true
+    buildFeatures {
+        viewBinding true
     }
+
 }
 
 dependencies {
@@ -61,7 +62,7 @@ dependencies {
     implementation 'com.google.android.gms:play-services-auth:20.4.1'
 
     //Naver Login SDK..
-    implementation 'com.navercorp.nid:oauth:5.4.0' // jdk 11
+    implementation 'com.navercorp.nid:oauth:5.5.0' // jdk 11
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'

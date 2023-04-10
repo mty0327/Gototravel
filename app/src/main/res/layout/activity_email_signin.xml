@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    tools:context=".activities.Activity.EmailSigninActivity">
+    tools:context=".activities.EmailSigninActivity">
 
     <!--업버튼 만들기 툴바-->
     <androidx.appcompat.widget.Toolbar

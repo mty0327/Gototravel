@@ -1,3 +1,3 @@
-package com.mty.myapplication.activities.model
+package com.mty.myapplication.model
 
 data class UserAccount (var id:String, var email:String)

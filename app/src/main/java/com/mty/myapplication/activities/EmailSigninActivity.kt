@@ -1,4 +1,4 @@
-package com.mty.myapplication.activities.Activity
+package com.mty.myapplication.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,8 +6,8 @@ import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
 import com.google.firebase.firestore.FirebaseFirestore
 import com.mty.myapplication.R
-import com.mty.myapplication.activities.model.UserAccount
-import com.mty.myapplication.activities.network.A
+import com.mty.myapplication.model.UserAccount
+import com.mty.myapplication.network.A
 import com.mty.myapplication.databinding.ActivityEmailSigninBinding
 
 class EmailSigninActivity : AppCompatActivity() {

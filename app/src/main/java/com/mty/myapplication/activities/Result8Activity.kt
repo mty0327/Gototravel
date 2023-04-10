@@ -1,9 +1,8 @@
-package com.mty.myapplication.activities.Activity
+package com.mty.myapplication.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.mty.myapplication.databinding.ActivityResult4Binding
-import com.mty.myapplication.databinding.ActivityResult5Binding
+import com.mty.myapplication.databinding.ActivityResult8Binding
 import java.io.BufferedReader
 import java.io.IOException
 import java.io.InputStreamReader
@@ -11,9 +10,9 @@ import java.net.HttpURLConnection
 import java.net.URL
 import java.net.URLEncoder
 
-class Result5Activity : AppCompatActivity() {
+class Result8Activity : AppCompatActivity() {
 
-    val binding: ActivityResult5Binding by lazy { ActivityResult5Binding.inflate(layoutInflater) }
+    val binding: ActivityResult8Binding by lazy { ActivityResult8Binding.inflate(layoutInflater) }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
@@ -23,8 +22,8 @@ class Result5Activity : AppCompatActivity() {
         @JvmStatic
         fun main(args: Array<String>) {
             val urlBuilder =
-                StringBuilder("http://apis.data.go.kr/1262000/CountryHistoryService2/getCountryHistoryList2") /*URL*/
-            urlBuilder.append("?" + URLEncoder.encode("serviceKey", "UTF-8") + "=서비스키") /*Service Key*/
+                StringBuilder("http://apis.data.go.kr/1262000/LocalContactService2/getLocalContactList2") /*URL*/
+            urlBuilder.append("?" + URLEncoder.encode("serviceKey", "UTF-8") + "=I9VYqPF7Jlua0khI%2B7%2FP0dEpDY4BH2tthlOu9A88wMrXWnboJl2IdpjGJPV13ot0Wi8yyUCD9jBRkZynRj4mOA%3D%3D") /*Service Key*/
             urlBuilder.append(
                 "&" + URLEncoder.encode(
                     "returnType",

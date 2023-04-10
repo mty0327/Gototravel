@@ -6,7 +6,7 @@
     android:padding="16dp"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".activities.Activity.Result1Activity">
+    tools:context=".activities.Result1Activity">
 
     <TextView
         android:id="@+id/tv_frg1"

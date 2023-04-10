@@ -1,8 +1,8 @@
-package com.mty.myapplication.activities.Activity
+package com.mty.myapplication.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.mty.myapplication.databinding.ActivityResult2Binding
+import com.mty.myapplication.databinding.ActivityResult3Binding
 import java.io.BufferedReader
 import java.io.IOException
 import java.io.InputStreamReader
@@ -10,9 +10,9 @@ import java.net.HttpURLConnection
 import java.net.URL
 import java.net.URLEncoder
 
-class Result2Activity : AppCompatActivity() {
+class Result3Activity : AppCompatActivity() {
 
-    val binding:ActivityResult2Binding by lazy { ActivityResult2Binding.inflate(layoutInflater) }
+    val binding: ActivityResult3Binding by lazy { ActivityResult3Binding.inflate(layoutInflater) }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
@@ -22,7 +22,7 @@ class Result2Activity : AppCompatActivity() {
         @JvmStatic
         fun main(args: Array<String>) {
             val urlBuilder =
-                StringBuilder("http://apis.data.go.kr/1262000/NoticeService2/getNoticeList2") /*URL*/
+                StringBuilder("http://apis.data.go.kr/1262000/EntranceVisaService2/getEntranceVisaList2") /*URL*/
             urlBuilder.append("?" + URLEncoder.encode("serviceKey", "UTF-8") + "=서비스키") /*Service Key*/
             urlBuilder.append(
                 "&" + URLEncoder.encode(
@@ -42,6 +42,18 @@ class Result2Activity : AppCompatActivity() {
                     "UTF-8"
                 )
             ) /*페이지 번호*/
+            urlBuilder.append(
+                "&" + URLEncoder.encode(
+                    "cond[country_nm::EQ]",
+                    "UTF-8"
+                ) + "=" + URLEncoder.encode("가나", "UTF-8")
+            ) /*한글 국가명*/
+            urlBuilder.append(
+                "&" + URLEncoder.encode(
+                    "cond[country_iso_alp2::EQ]",
+                    "UTF-8"
+                ) + "=" + URLEncoder.encode("GH", "UTF-8")
+            ) /*ISO 2자리코드*/
             val url = URL(urlBuilder.toString())
             val conn = url.openConnection() as HttpURLConnection
             conn.requestMethod = "GET"

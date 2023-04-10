@@ -1,9 +1,8 @@
-package com.mty.myapplication.activities.Activity
+package com.mty.myapplication.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.mty.myapplication.databinding.ActivityResult3Binding
-import com.mty.myapplication.databinding.ActivityResult4Binding
+import com.mty.myapplication.databinding.ActivityResult9Binding
 import java.io.BufferedReader
 import java.io.IOException
 import java.io.InputStreamReader
@@ -11,9 +10,9 @@ import java.net.HttpURLConnection
 import java.net.URL
 import java.net.URLEncoder
 
-class Result4Activity : AppCompatActivity() {
+class Result9Activity : AppCompatActivity() {
 
-    val binding: ActivityResult4Binding by lazy { ActivityResult4Binding.inflate(layoutInflater) }
+    val binding: ActivityResult9Binding by lazy { ActivityResult9Binding.inflate(layoutInflater) }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
@@ -23,7 +22,7 @@ class Result4Activity : AppCompatActivity() {
         @JvmStatic
         fun main(args: Array<String>) {
             val urlBuilder =
-                StringBuilder("http://apis.data.go.kr/1262000/TravelAlarmService2/getTravelAlarmList2") /*URL*/
+                StringBuilder("http://apis.data.go.kr/1262000/CountryCovid19SafetyServiceNew/getCountrySafetyNewsListNew") /*URL*/
             urlBuilder.append("?" + URLEncoder.encode("serviceKey", "UTF-8") + "=서비스키") /*Service Key*/
             urlBuilder.append(
                 "&" + URLEncoder.encode(
@@ -38,6 +37,12 @@ class Result4Activity : AppCompatActivity() {
                 ) + "=" + URLEncoder.encode("10", "UTF-8")
             ) /*한 페이지 결과 수*/
             urlBuilder.append(
+                "&" + URLEncoder.encode("pageNo", "UTF-8") + "=" + URLEncoder.encode(
+                    "1",
+                    "UTF-8"
+                )
+            ) /*페이지 번호*/
+            urlBuilder.append(
                 "&" + URLEncoder.encode(
                     "cond[country_nm::EQ]",
                     "UTF-8"
@@ -49,12 +54,6 @@ class Result4Activity : AppCompatActivity() {
                     "UTF-8"
                 ) + "=" + URLEncoder.encode("GH", "UTF-8")
             ) /*ISO 2자리코드*/
-            urlBuilder.append(
-                "&" + URLEncoder.encode("pageNo", "UTF-8") + "=" + URLEncoder.encode(
-                    "1",
-                    "UTF-8"
-                )
-            ) /*페이지 번호*/
             val url = URL(urlBuilder.toString())
             val conn = url.openConnection() as HttpURLConnection
             conn.requestMethod = "GET"
