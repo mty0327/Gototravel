@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:text="경보조정:외교부에서 지정하는 여행 유의, 자제, 제한 등 해외 여행경보 대상국가 목록 및 상세정보를 제공"
         android:textSize="22sp"
+        android:fontFamily="@font/bmpro"
         android:textStyle="bold"
         android:background="@color/btn5"/>
 </LinearLayout>

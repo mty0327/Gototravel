@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:text="안전공지:국가∙지역별 각 공관에서 실시간 업데이트 되는 국가별 최신 안전공지를 제공하는 공공데이터 API 서비스"
         android:textStyle="bold"
+        android:fontFamily="@font/bmpro"
         android:textSize="22sp"
         android:background="@color/btn7"/>
 

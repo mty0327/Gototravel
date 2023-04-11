@@ -13,9 +13,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20sp"
+        android:fontFamily="@font/bmpro"
         android:textStyle="bold"
         android:text="일반정보:여행 대상 국가의 국가명, 영문명, 대륙 및 기본정보, 국기 이미지 경로 등을 포함한 목록정보와 단일 국가정보에 대한 상세정보를 조회"
         android:background="@color/red"/>
+
 
 
 </LinearLayout>

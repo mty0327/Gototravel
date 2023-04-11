@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:text="여행경보:여행경보제도는 특정 국가(지역) 여행·체류시 특별한 주의가 요구되는 국가 및 지역에 내려진 경보 정보를 제공"
         android:textStyle="bold"
+        android:fontFamily="@font/bmpro"
         android:textSize="22sp"
         android:background="@color/btn4"/>
 

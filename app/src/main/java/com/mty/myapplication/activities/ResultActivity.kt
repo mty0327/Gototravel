@@ -8,6 +8,12 @@ import android.widget.Button
 import android.widget.Toast
 import com.mty.myapplication.R
 import com.mty.myapplication.databinding.ActivityResultBinding
+import java.io.BufferedReader
+import java.io.IOException
+import java.io.InputStreamReader
+import java.net.HttpURLConnection
+import java.net.URL
+import java.net.URLEncoder
 
 class ResultActivity : AppCompatActivity() {
 
@@ -16,12 +22,10 @@ class ResultActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        var intent:Intent= getIntent()
-        var nation:String?= intent.getStringExtra("country")
+        var intent: Intent = getIntent()
+        var nation: String? = intent.getStringExtra("country")
 
         Toast.makeText(this, "${nation}", Toast.LENGTH_SHORT).show()
 
-
     }
-
 }
