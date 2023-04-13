@@ -14,7 +14,18 @@
         android:text="안전공지:국가∙지역별 각 공관에서 실시간 업데이트 되는 국가별 최신 안전공지를 제공하는 공공데이터 API 서비스"
         android:textStyle="bold"
         android:fontFamily="@font/bmpro"
-        android:textSize="22sp"
+        android:textSize="23sp"
         android:background="@color/btn7"/>
+
+    <TextView
+        android:id="@+id/tv_frg7"
+        android:textColor="@color/black"
+        android:padding="16dp"
+        android:fontFamily="@font/bm11"
+        android:background="@drawable/result7"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 </LinearLayout>

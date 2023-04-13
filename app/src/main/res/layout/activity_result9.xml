@@ -12,9 +12,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="최신안전:코로나19 관련된 해외 운항, 입국, 코로나19 관련 등의 국가·지역별 최신안전소식을 제공"
-        android:textSize="23sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         android:fontFamily="@font/bmpro"
         android:background="@color/btn9"/>
+
+    <TextView
+        android:id="@+id/tv_frg9"
+        android:textColor="@color/black"
+        android:padding="16dp"
+        android:fontFamily="@font/bm11"
+        android:textSize="20sp"
+        android:background="@drawable/result9"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 </LinearLayout>

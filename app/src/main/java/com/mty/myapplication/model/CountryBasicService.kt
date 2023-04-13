@@ -1,6 +1,6 @@
 package com.mty.myapplication.model
 
-data class NationItem(
+data class CountryBasicService(
     var basic:String="",
     var continent:String="",
     var contryName:String="",

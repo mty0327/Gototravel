@@ -15,6 +15,17 @@
         android:background="@color/btn3"
         android:fontFamily="@font/bmpro"
         android:textStyle="bold"
-        android:textSize="23sp"/>
+        android:textSize="21sp"/>
+
+    <TextView
+        android:id="@+id/tv_frg3"
+        android:textColor="@color/black"
+        android:padding="16dp"
+        android:fontFamily="@font/bm11"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:background="@drawable/result3"
+        android:layout_height="match_parent"/>
 
 </LinearLayout>
