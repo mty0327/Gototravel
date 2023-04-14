@@ -29,7 +29,7 @@
         android:layout_width="wrap_content"
         android:fontFamily="@font/bmpro"
         android:layout_height="wrap_content"
-        android:text="공지\n사항"
+        android:text="안전\n공지"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -91,7 +91,7 @@
         android:textSize="24sp"
         android:fontFamily="@font/bmpro"
         android:textStyle="bold"
-        android:text="안전\n공지"
+        android:text="공지\n사항"
         android:textColor="@color/black"
         android:backgroundTint="@color/btn7"/>
     <Button
