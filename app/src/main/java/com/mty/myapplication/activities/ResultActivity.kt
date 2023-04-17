@@ -43,43 +43,33 @@ class ResultActivity : AppCompatActivity() {
         }
 
         binding.btn3.setOnClickListener {
-            val i3 = Intent(this, Result2Activity::class.java)
+            val i3 = Intent(this, Result3Activity::class.java)
             startActivity(i3)
         }
 
 
         binding.btn4.setOnClickListener {
-            val i4 = Intent(this, Result2Activity::class.java)
+            val i4 = Intent(this, Result4Activity::class.java)
             startActivity(i4)
         }
 
 
         binding.btn5.setOnClickListener {
-            val i5 = Intent(this, Result2Activity::class.java)
+            val i5 = Intent(this, Result5Activity::class.java)
             startActivity(i5)
         }
 
 
         binding.btn6.setOnClickListener {
-            val i6 = Intent(this, Result2Activity::class.java)
+            val i6 = Intent(this, Result6Activity::class.java)
             startActivity(i6)
         }
-
-
-        binding.btn7.setOnClickListener {
-            val i7 = Intent(this, Result2Activity::class.java)
-            startActivity(i7)
-        }
-
-
         binding.btn8.setOnClickListener {
-            val i8 = Intent(this, Result2Activity::class.java)
+            val i8 = Intent(this, Result8Activity::class.java)
             startActivity(i8)
         }
-
-
         binding.btn9.setOnClickListener {
-            val i9 = Intent(this, Result2Activity::class.java)
+            val i9 = Intent(this, Result9Activity::class.java)
             startActivity(i9)
         }
     }

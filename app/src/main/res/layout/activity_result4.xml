@@ -6,17 +6,16 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".activities.Result4Activity">
+    tools:context=".activities.Result6Activity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="여행경보:여행경보제도는 특정 국가(지역) 여행·체류시 특별한 주의가 요구되는 국가 및 지역에 내려진 경보 정보를 제공"
+        android:text="특별여행:국가∙지역별 외교부에서 지정하는 여행 유의, 자제, 제한 등 해외 여행경보 대상국가 목록 및 상세정보의 히스토리내역을 제공"
         android:textStyle="bold"
         android:fontFamily="@font/bmpro"
         android:textSize="22sp"
         android:background="@color/btn4"/>
-
     <TextView
         android:id="@+id/tv_frg4"
         android:textColor="@color/black"

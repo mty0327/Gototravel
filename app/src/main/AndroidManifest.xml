@@ -25,13 +25,13 @@
             android:name=".activities.Result7Activity"
             android:exported="false" />
         <activity
-            android:name=".activities.Result6Activity"
+            android:name=".activities.Result4Activity"
             android:exported="false" />
         <activity
             android:name=".activities.Result5Activity"
             android:exported="false" />
         <activity
-            android:name=".activities.Result4Activity"
+            android:name=".activities.Result6Activity"
             android:exported="false" />
         <activity
             android:name=".activities.Result3Activity"

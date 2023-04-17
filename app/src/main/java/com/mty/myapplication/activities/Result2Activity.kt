@@ -1,16 +1,13 @@
 package com.mty.myapplication.activities
 
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.mty.myapplication.G
-import com.mty.myapplication.G.Companion.nation
+import com.mty.myapplication.SafetyNoticeResponse
+import com.mty.myapplication.SafetyNoticeService
 import com.mty.myapplication.databinding.ActivityResult2Binding
-import java.io.BufferedReader
-import java.io.InputStreamReader
-import java.net.HttpURLConnection
-import java.net.URL
-import java.net.URLEncoder
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
+import retrofit2.http.GET
 
 
 class Result2Activity : AppCompatActivity() {
@@ -20,39 +17,18 @@ class Result2Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        loadData()
-    }
+        suspend fun main() {
+            val retrofit = Retrofit.Builder()
+                .baseUrl("http://apis.data.go.kr/1262000/CountrySafetyService3/getCountrySafetyList3")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build()
 
-    fun loadData() {
-        Toast.makeText(this, "${G.nation}", Toast.LENGTH_SHORT).show()
+            val service = retrofit.create(SafetyNoticeService::class.java)
+            val response = service.getSafetyNotices()
 
-        fun main() {
-            val urlBuilder = StringBuilder("http://apis.data.go.kr/1262000/CountrySafetyService3/getCountrySafetyList3")
-            urlBuilder.append("?" + URLEncoder.encode("serviceKey", "UTF-8") + "=서비스키")
-            urlBuilder.append("&" + URLEncoder.encode("returnType", "UTF-8") + "=" + URLEncoder.encode("JSON", "UTF-8"))
-            urlBuilder.append("&" + URLEncoder.encode("numOfRows", "UTF-8") + "=" + URLEncoder.encode("10", "UTF-8"))
-            urlBuilder.append("&" + URLEncoder.encode("cond[country_nm::EQ]", "UTF-8") + "=" + URLEncoder.encode("카자흐스탄", "UTF-8"))
-            urlBuilder.append("&" + URLEncoder.encode("cond[country_iso_alp2::EQ]", "UTF-8") + "=" + URLEncoder.encode("KZ", "UTF-8"))
-            urlBuilder.append("&" + URLEncoder.encode("pageNo", "UTF-8") + "=" + URLEncoder.encode("1", "UTF-8"))
-            val url = URL(urlBuilder.toString())
-            val conn = url.openConnection() as HttpURLConnection
-            conn.requestMethod = "GET"
-            conn.setRequestProperty("Content-type", "application/json")
-            println("Response code: ${conn.responseCode}")
-            val rd: BufferedReader
-            rd = if (conn.responseCode >= 200 && conn.responseCode <= 300) {
-                BufferedReader(InputStreamReader(conn.inputStream))
-            } else {
-                BufferedReader(InputStreamReader(conn.errorStream))
-            }
-            val sb = StringBuilder()
-            var line: String?
-            while (rd.readLine().also { line = it } != null) {
-                sb.append(line)
-            }
-            rd.close()
-            conn.disconnect()
-            println(sb.toString())
+            // response를 사용하여 데이터 처리
+            println(response.data.first().title)
         }
+        binding.tvFrg2.text= SafetyListR
     }
 }
