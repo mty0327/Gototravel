@@ -1,8 +1,8 @@
 package com.mty.myapplication
 
-data class SafetyNoticeResponse(
+data class SafetyNotice(
     val currentCount: Int,
-    val data: List<SafetyNotice>,
+    val data: MutableList<SafetyNoticeItem>,
     val numOfRows: Int,
     val pageNo: Int,
     val resultCode: Int,
@@ -10,7 +10,7 @@ data class SafetyNoticeResponse(
     val totalCount: Int
 )
 
-data class SafetyNotice(
+data class SafetyNoticeItem(
     val continent_cd: String,
     val continent_eng_nm: String,
     val continent_nm: String,

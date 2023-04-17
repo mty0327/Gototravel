@@ -17,8 +17,8 @@
         android:fontFamily="@font/bmpro"
         android:textStyle="bold"
         android:background="@color/btn5"/>
-    <TextView
-        android:id="@+id/tv_frg5"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/re5"
         android:textColor="@color/black"
         android:padding="16dp"
         android:fontFamily="@font/bm11"
@@ -26,5 +26,6 @@
         android:textStyle="bold"
         android:background="@drawable/result5"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
 </LinearLayout>

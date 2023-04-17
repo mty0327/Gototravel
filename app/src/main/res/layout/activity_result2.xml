@@ -16,16 +16,17 @@
         android:fontFamily="@font/bmpro"
         android:text="안전공지:국가∙지역별 각 공관에서 실시간 업데이트 되는 국가별 최신 안전공지를 제공하는 공공데이터 API 서비스"
         android:background="@color/btn2"/>
-    <TextView
-        android:id="@+id/tv_frg2"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/re2"
         android:textColor="@color/black"
         android:padding="16dp"
-        android:textSize="20sp"
+        android:textSize="22sp"
         android:textStyle="bold"
         android:fontFamily="@font/bm11"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/result2"/>
+        android:background="@drawable/result2"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
 
 
 </LinearLayout>

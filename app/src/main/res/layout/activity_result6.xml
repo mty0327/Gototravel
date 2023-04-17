@@ -18,7 +18,7 @@
         android:textStyle="bold"/>
 
     <TextView
-        android:id="@+id/tv_frg6"
+        android:id="@+id/re6"
         android:textColor="@color/black"
         android:padding="16dp"
         android:fontFamily="@font/bm11"
@@ -26,6 +26,7 @@
         android:background="@drawable/result6"
         android:textStyle="bold"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
 
 </LinearLayout>

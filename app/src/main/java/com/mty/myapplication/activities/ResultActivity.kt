@@ -33,7 +33,7 @@ class ResultActivity : AppCompatActivity() {
 
         binding.btn1.setOnClickListener {
             val i1 = Intent(this, Result1Activity::class.java)
-            startActivity(i1) //
+            startActivity(i1)
         }
 
 
@@ -104,7 +104,7 @@ class ResultActivity : AppCompatActivity() {
                                 runOnUiThread {
                                     Toast.makeText(
                                         this@ResultActivity,
-                                        "파싱 시작!",
+                                        "검색 시작!",
                                         Toast.LENGTH_SHORT
                                     ).show()
                                 }

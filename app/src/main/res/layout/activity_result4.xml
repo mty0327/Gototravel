@@ -16,15 +16,16 @@
         android:fontFamily="@font/bmpro"
         android:textSize="22sp"
         android:background="@color/btn4"/>
-    <TextView
-        android:id="@+id/tv_frg4"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/re4"
         android:textColor="@color/black"
         android:padding="16dp"
         android:fontFamily="@font/bm11"
-        android:textSize="20sp"
+        android:textSize="22sp"
         android:textStyle="bold"
         android:layout_width="match_parent"
         android:background="@drawable/result4"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
 
 </LinearLayout>
