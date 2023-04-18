@@ -3,10 +3,10 @@ package com.mty.myapplication.activities
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.mty.myapplication.G
-import com.mty.myapplication.SafetyNotice
-import com.mty.myapplication.SafetyNoticeItem
-import com.mty.myapplication.SafetyNoticeService
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.mty.myapplication.*
+import com.mty.myapplication.adapters.CountrySafetyServiceAdapter
 import com.mty.myapplication.databinding.ActivityResult2Binding
 import retrofit2.Call
 import retrofit2.Callback
@@ -41,6 +41,12 @@ class Result2Activity : AppCompatActivity() {
                 Toast.makeText(this@Result2Activity, " ${items[0].title}", Toast.LENGTH_SHORT).show()
 
                 //recyclerView를 이용하여 items 보여주기
+
+                val recyclerView = findViewById<RecyclerView>(R.id.re2)
+                recyclerView.adapter = CountrySafetyServiceAdapter(items)
+                recyclerView.layoutManager = LinearLayoutManager(this@Result2Activity)
+                recyclerView.setHasFixedSize(true)
+
             }
 
             override fun onFailure(call: Call<SafetyNotice>, t: Throwable) {
