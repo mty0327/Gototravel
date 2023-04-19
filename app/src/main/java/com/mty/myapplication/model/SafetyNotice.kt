@@ -9,7 +9,6 @@ data class SafetyNotice(
     val resultMsg: String,
     val totalCount: Int
 )
-
 data class SafetyNoticeItem(
     val continent_cd: String,
     val continent_eng_nm: String,

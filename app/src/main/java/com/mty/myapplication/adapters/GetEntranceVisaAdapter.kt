@@ -9,9 +9,7 @@ import com.mty.myapplication.R
 import com.mty.myapplication.model.GetEntranceVisaItem
 
 class GetEntranceVisaAdapter (val getEntranceVisaList:MutableList<GetEntranceVisaItem>): RecyclerView.Adapter<GetEntranceVisaAdapter.visaViewHolder>()
-{
-    override fun onCreateViewHolder (parent: ViewGroup, viewType: Int
-    ): GetEntranceVisaAdapter.visaViewHolder {
+{override fun onCreateViewHolder (parent: ViewGroup, viewType: Int): GetEntranceVisaAdapter.visaViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.list_getentrancevisa, parent,false)
         return visaViewHolder(view)
     }

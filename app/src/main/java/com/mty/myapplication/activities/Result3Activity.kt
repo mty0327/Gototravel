@@ -43,18 +43,17 @@ class Result3Activity : AppCompatActivity() {
 
                 items=getEntranceVisa!!.data
 
-                Toast.makeText(this@Result3Activity, "${items[0].id}", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@Result3Activity, " ${items[0].country_nm}", Toast.LENGTH_SHORT).show()
 
                 //recyclerview이용하기
 
-                val recyclerView =findViewById<RecyclerView>(R.id.re3)
-                recyclerView.adapter = GetEntranceVisaAdapter(items)
-                recyclerView.layoutManager=LinearLayoutManager(this@Result3Activity)
-                recyclerView.setHasFixedSize(true)
-
+                binding.re3.adapter = GetEntranceVisaAdapter(items)
+                binding.re3.layoutManager=LinearLayoutManager(this@Result3Activity)
+                binding.re3.setHasFixedSize(true)
             }
 
             override fun onFailure(call: Call<GetEntranceVisa>, t: Throwable) {
+                Toast.makeText(this@Result3Activity, "Error", Toast.LENGTH_SHORT).show()
             }
         })
     }
