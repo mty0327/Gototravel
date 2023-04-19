@@ -14,7 +14,7 @@
         android:textSize="22sp"
         android:textStyle="bold"
         android:fontFamily="@font/bmpro"
-        android:text="안전공지:국가∙지역별 각 공관에서 실시간 업데이트 되는 국가별 최신 안전공지를 제공하는 공공데이터 API 서비스"
+        android:text="안전공지:1.여권필요여부 2.일반여권 입국여부 3.일반여권 체류기간 4.관용여권 입국여부 5.관용여권 체류기간 6. 외교관여권 입국여부 7.외교관여권 체류기간 8.무비자 협정여부 9.비고"
         android:background="@color/btn2"/>
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/re2"

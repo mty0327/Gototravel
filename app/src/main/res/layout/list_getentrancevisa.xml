@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="16dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="3dp"
+    android:padding="4dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_have_yn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="여권소지여부" />
+
+        <TextView
+            android:id="@+id/tv_gnrl_pspt_visa_yn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="일반여권 입국허가요건 여부"/>
+
+        <TextView
+            android:id="@+id/tv_gnrl_pspt_visa_cn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="일반여권 입국허가요건 내용"/>
+        
+        <TextView
+            android:id="@+id/tv_ofclpspt_visa_yn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="관용여권 입국허가요건 여부"/>
+
+        <TextView
+            android:id="@+id/tv_ofclpspt_visa_cn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="관용여권 입국허가요건 내용"/>
+        <TextView
+            android:id="@+id/tv_dplmt_pspt_visa_yn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="외교관여권 입국허가요건 여부"/>
+        <TextView
+            android:id="@+id/tv_dplmt_pspt_visa_cn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="외교관여권 입국허가요건 내용"/>
+        <TextView
+            android:id="@+id/tv_nvisa_entry_evdc_cn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="무비자 입국근거내용"/>
+        <TextView
+            android:id="@+id/tv_remark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="비고"/>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -22,9 +22,6 @@
             android:name=".activities.Result8Activity"
             android:exported="false" />
         <activity
-            android:name=".activities.Result7Activity"
-            android:exported="false" />
-        <activity
             android:name=".activities.Result4Activity"
             android:exported="false" />
         <activity
