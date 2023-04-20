@@ -4,22 +4,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.mty.myapplication.EntranceVisaService
 import com.mty.myapplication.G
-import com.mty.myapplication.R
+import com.mty.myapplication.SafetyNoticeService
 import com.mty.myapplication.adapters.GetEntranceVisaAdapter
 import com.mty.myapplication.databinding.ActivityResult3Binding
 import com.mty.myapplication.model.GetEntranceVisa
 import com.mty.myapplication.model.GetEntranceVisaItem
 import retrofit2.*
 import retrofit2.converter.gson.GsonConverterFactory
-import java.io.BufferedReader
-import java.io.IOException
-import java.io.InputStreamReader
-import java.net.HttpURLConnection
-import java.net.URL
-import java.net.URLEncoder
 
 class Result3Activity : AppCompatActivity() {
 
@@ -34,7 +26,7 @@ class Result3Activity : AppCompatActivity() {
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
-        val service = retrofit.create(EntranceVisaService::class.java)
+        val service = retrofit.create(SafetyNoticeService::class.java)
         service.getEntranceVisas(G.nation).enqueue(object :Callback<GetEntranceVisa>{
             override fun onResponse(
                 call: Call<GetEntranceVisa>, response: Response<GetEntranceVisa>) {

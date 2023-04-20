@@ -2,7 +2,7 @@ package com.mty.myapplication.model
 
 data class SpTravelWarning(
     val currentCount: Int,
-    val data: MutableList<SpTravelWarningitem>,
+    val data: MutableList <SpTravelWarningitem>,
     val numOfRows: Int,
     val pageNo: Int,
     val resultCode: Int,

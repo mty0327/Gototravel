@@ -32,10 +32,7 @@ class Result4Activity : AppCompatActivity() {
 
         val service = retrofit.create(SafetyNoticeService::class.java)
         service.getSptravelWariningServices(G.nation).enqueue(object :Callback<SpTravelWarning> {
-                override fun onResponse(
-                    call: Call<SpTravelWarning>,
-                    response: Response<SpTravelWarning>
-                ) {
+                override fun onResponse(call: Call<SpTravelWarning>, response: Response<SpTravelWarning>) {
 
                     val SpTravelWarning = response.body()
 
@@ -44,8 +41,6 @@ class Result4Activity : AppCompatActivity() {
                     Toast.makeText(this@Result4Activity,"${items[0].country_nm}", Toast.LENGTH_SHORT).show()
 
                     //recyclerview이용하기
-
-
                     binding.re4.adapter = SpTravelWarningServiceAdapter(items)
                     binding.re4.layoutManager = LinearLayoutManager(this@Result4Activity)
                     binding.re4.setHasFixedSize(true)

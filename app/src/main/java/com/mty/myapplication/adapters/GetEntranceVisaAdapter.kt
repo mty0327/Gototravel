@@ -8,8 +8,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.mty.myapplication.R
 import com.mty.myapplication.model.GetEntranceVisaItem
 
-class GetEntranceVisaAdapter (val getEntranceVisaList:MutableList<GetEntranceVisaItem>): RecyclerView.Adapter<GetEntranceVisaAdapter.visaViewHolder>()
-{override fun onCreateViewHolder (parent: ViewGroup, viewType: Int): GetEntranceVisaAdapter.visaViewHolder {
+    class GetEntranceVisaAdapter (val getEntranceVisaList:MutableList<GetEntranceVisaItem>): RecyclerView.Adapter<GetEntranceVisaAdapter.visaViewHolder>() {
+        override fun onCreateViewHolder (parent: ViewGroup, viewType: Int): visaViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.list_getentrancevisa, parent,false)
         return visaViewHolder(view)
     }
@@ -32,15 +32,15 @@ class GetEntranceVisaAdapter (val getEntranceVisaList:MutableList<GetEntranceVis
 
     class visaViewHolder (itemView: View) :RecyclerView.ViewHolder(itemView) {
 
-        val have_yn =itemView.findViewById<TextView>(R.id.tv_have_yn)
-        val gnrl_pspt_visa_yn=itemView.findViewById<TextView>(R.id.tv_gnrl_pspt_visa_yn)
-        val gnrl_pspt_visa_cn=itemView.findViewById<TextView>(R.id.tv_gnrl_pspt_visa_cn)
-        val ofclpspt_visa_yn=itemView.findViewById<TextView>(R.id.tv_ofclpspt_visa_yn)
-        val ofclpspt_visa_cn=itemView.findViewById<TextView>(R.id.tv_ofclpspt_visa_cn)
-        val dplmt_pspt_visa_yn=itemView.findViewById<TextView>(R.id.tv_dplmt_pspt_visa_yn)
-        val dplmt_pspt_visa_cn=itemView.findViewById<TextView>(R.id.tv_dplmt_pspt_visa_cn)
-        val nvisa_entry_evdc_cn=itemView.findViewById<TextView>(R.id.tv_nvisa_entry_evdc_cn)
-        val remark=itemView.findViewById<TextView>(R.id.tv_remark)
+        val have_yn =itemView.findViewById<TextView>(R.id.tv_have_yn3)
+        val gnrl_pspt_visa_yn=itemView.findViewById<TextView>(R.id.tv_gnrl_pspt_visa_yn3)
+        val gnrl_pspt_visa_cn=itemView.findViewById<TextView>(R.id.tv_gnrl_pspt_visa_cn3)
+        val ofclpspt_visa_yn=itemView.findViewById<TextView>(R.id.tv_ofclpspt_visa_yn3)
+        val ofclpspt_visa_cn=itemView.findViewById<TextView>(R.id.tv_ofclpspt_visa_cn3)
+        val dplmt_pspt_visa_yn=itemView.findViewById<TextView>(R.id.tv_dplmt_pspt_visa_yn3)
+        val dplmt_pspt_visa_cn=itemView.findViewById<TextView>(R.id.tv_dplmt_pspt_visa_cn3)
+        val nvisa_entry_evdc_cn=itemView.findViewById<TextView>(R.id.tv_nvisa_entry_evdc_cn3)
+        val remark=itemView.findViewById<TextView>(R.id.tv_remark3)
 
     }
 

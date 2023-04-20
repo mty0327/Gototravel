@@ -18,7 +18,6 @@ data class TravelAlarmItem(
     val country_iso_alp2: String,
     val country_nm: String,
     val dang_map_download_url: String,
-    val flag_download_url: String,
     val map_download_url: String,
     val region_ty: String,
     val remark: String,

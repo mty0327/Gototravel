@@ -15,6 +15,7 @@ class CountrySafetyServiceAdapter(val countrysafetynoticeList:MutableList<Safety
         val view = LayoutInflater.from(parent.context).inflate(R.layout.list_countrysafetynotice, parent,false)
         return noticeViewHolder(view)
     }
+
     override fun getItemCount(): Int {
         return countrysafetynoticeList.size
     }
@@ -29,9 +30,9 @@ class CountrySafetyServiceAdapter(val countrysafetynoticeList:MutableList<Safety
 
     }
     class noticeViewHolder(itemView:View) :RecyclerView.ViewHolder(itemView) {
-        val ctgy_nm=itemView.findViewById<TextView>(R.id.tv_ctgy_nm) // 공지사항
-        val txt_origin_cn=itemView.findViewById<TextView>(R.id.tv_txt_origin_cn) //텍스트 원본내용
-        val wrt_dt=itemView.findViewById<TextView>(R.id.tv_wrt_dt) //작성일자
+        val ctgy_nm=itemView.findViewById<TextView>(R.id.tv_ctgy_nm2) // 공지사항
+        val txt_origin_cn=itemView.findViewById<TextView>(R.id.tv_txt_origin_cn2) //텍스트 원본내용
+        val wrt_dt=itemView.findViewById<TextView>(R.id.tv_wrt_dt2) //작성일자
     }
 
 }

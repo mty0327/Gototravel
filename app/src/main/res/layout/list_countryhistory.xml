@@ -7,44 +7,36 @@
     app:cardBackgroundColor="@color/white"
     app:cardCornerRadius="12dp"
     app:cardElevation="3dp"
-    android:padding="4dp">
+    app:contentPadding="4dp">
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-
     <TextView
-        android:id="@+id/tv_region_ty5"
+        android:id="@+id/title6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:text="지역유형"/>
-
+        android:text="제목" />
+    <TextView
+        android:id="@+id/tv_txt_origin_cn6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="원본 텍스트 내용"/>
     <ImageView
-        android:id="@+id/iv_dang_map_download_url5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="16dp" />
-
-    <TextView
-        android:id="@+id/tv_alarm_lvl5"
+        android:id="@+id/iv_file_download_url6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:text="경보단계"/>
+        android:text="파일 다운로드 경로"/>
     <TextView
-        android:id="@+id/tv_remark5"
+        android:id="@+id/tv_wrt_dt6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:text="비고"/>
-    <TextView
-        android:id="@+id/tv_written_dt5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:text="작성일"/>
+        android:text="작성일자"/>
 
     </LinearLayout>
 
