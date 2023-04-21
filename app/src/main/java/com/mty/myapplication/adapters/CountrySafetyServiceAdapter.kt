@@ -9,8 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.mty.myapplication.R
 import com.mty.myapplication.SafetyNoticeItem
 
-class CountrySafetyServiceAdapter(val countrysafetynoticeList:MutableList<SafetyNoticeItem>):RecyclerView.Adapter<CountrySafetyServiceAdapter.noticeViewHolder>()
-{
+class CountrySafetyServiceAdapter(val countrysafetynoticeList:MutableList<SafetyNoticeItem>):RecyclerView.Adapter<CountrySafetyServiceAdapter.noticeViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CountrySafetyServiceAdapter.noticeViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.list_countrysafetynotice, parent,false)
         return noticeViewHolder(view)

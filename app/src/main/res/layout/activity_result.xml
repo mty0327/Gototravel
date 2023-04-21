@@ -104,7 +104,7 @@
         android:textStyle="bold"
         android:layout_marginLeft="280dp"
         android:backgroundTint="@color/btn9"
-        android:text="최신\n안전"/>
+        android:text="최신\n뉴스"/>
 
 
 

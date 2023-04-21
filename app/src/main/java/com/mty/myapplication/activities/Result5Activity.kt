@@ -13,8 +13,7 @@ import com.mty.myapplication.model.TravelAlarmItem
 import com.mty.myapplication.model.TravelAlarmService
 import retrofit2.*
 import retrofit2.converter.gson.GsonConverterFactory
-
-
+import retrofit2.converter.scalars.ScalarsConverterFactory
 
 
 class Result5Activity : AppCompatActivity() {
@@ -27,6 +26,7 @@ class Result5Activity : AppCompatActivity() {
 
         val retrofit = Retrofit.Builder()
             .baseUrl("https://apis.data.go.kr/")
+            .addConverterFactory(ScalarsConverterFactory.create())
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 

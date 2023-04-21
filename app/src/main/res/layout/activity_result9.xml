@@ -11,22 +11,21 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="최신안전:코로나19 관련된 해외 운항, 입국, 코로나19 관련 등의 국가·지역별 최신안전소식을 제공"
+        android:text="최신뉴스:코로나19 관련된 해외 운항, 입국, 코로나19 관련 등의 국가·지역별 최신안전소식을 제공"
         android:textSize="24sp"
         android:textStyle="bold"
         android:fontFamily="@font/bmpro"
         android:background="@color/btn9"/>
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/re9"
         android:textColor="@color/black"
         android:padding="16dp"
         android:fontFamily="@font/bm11"
         android:textSize="20sp"
-        android:background="@drawable/result9"
         android:textStyle="bold"
+        android:background="@drawable/result9"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
-
 </LinearLayout>

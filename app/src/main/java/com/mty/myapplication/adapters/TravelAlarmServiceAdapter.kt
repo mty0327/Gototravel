@@ -10,7 +10,7 @@ import com.bumptech.glide.Glide
 import com.mty.myapplication.R
 import com.mty.myapplication.model.TravelAlarmItem
 
-class TravelAlarmServiceAdapter(val travelAlarmlist:MutableList<TravelAlarmItem>): RecyclerView.Adapter<TravelAlarmServiceAdapter.AlarmViewHolder>() {
+class TravelAlarmServiceAdapter(val travelAlarmlist:MutableList<TravelAlarmItem>):RecyclerView.Adapter<TravelAlarmServiceAdapter.AlarmViewHolder>() {
     override fun onCreateViewHolder (parent: ViewGroup, viewType: Int): AlarmViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.list_travelalarm, parent, false)
         return AlarmViewHolder(view)
