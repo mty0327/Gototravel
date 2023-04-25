@@ -35,8 +35,6 @@ class Result3Activity : AppCompatActivity() {
 
                 items=getEntranceVisa!!.data
 
-                Toast.makeText(this@Result3Activity, " ${items[0].country_nm}", Toast.LENGTH_SHORT).show()
-
                 //recyclerview이용하기
 
                 binding.re3.adapter = GetEntranceVisaAdapter(items)

@@ -38,7 +38,6 @@ class Result6Activity : AppCompatActivity() {
 
                 items = countryHistoryService!!.data // 변경된 부분
 
-                Toast.makeText(this@Result6Activity, "${items[0].wrt_dt}", Toast.LENGTH_SHORT).show()
 
                 //recyclerView이용하기
                 binding.re6.adapter= CountryHistoryServiceAdapter(items)

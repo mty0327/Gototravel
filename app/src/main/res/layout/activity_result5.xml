@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="여행경보:여행경보제도는 특정 국가(지역) 여행·체류시 특별한 주의가 요구되는 국가 및 지역에 내려진 경보 정보를 제공"
+        android:text="여행경보:여행경보제도는 특정 국가(지역) 여행·체류시 특별한 주의가 요구되는 국가 및 지역에 내려진 경보 정보를 제공. 위험 지역 지도, 경보단계,비고란, 작성일자 제공"
 
         android:textSize="23sp"
         android:fontFamily="@font/bmpro"

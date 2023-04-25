@@ -48,7 +48,6 @@ class Result8Activity : AppCompatActivity() {
 
                 items= LocalContactService!!.data as MutableList<LocalContactitem>
 
-                Toast.makeText(this@Result8Activity, "${items[0].contact_remark}", Toast.LENGTH_SHORT).show()
 
 
                 //recyclerview이용

@@ -37,7 +37,6 @@ class Result2Activity : AppCompatActivity() {
                 val safetyNotice= response.body()
 
                 items= safetyNotice!!.data
-                Toast.makeText(this@Result2Activity, " ${items[0].title}", Toast.LENGTH_SHORT).show()
 
                 //recyclerView를 이용하여 items 보여주기
 

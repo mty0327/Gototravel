@@ -11,7 +11,7 @@ import java.net.HttpURLConnection
 import java.net.URL
 import java.net.URLEncoder
 
-class Result1Activity : AppCompatActivity() {
+class  Result1Activity : AppCompatActivity() {
 
     val binding:ActivityResult1Binding by lazy {ActivityResult1Binding.inflate(layoutInflater)}
     override fun onCreate(savedInstanceState: Bundle?) {

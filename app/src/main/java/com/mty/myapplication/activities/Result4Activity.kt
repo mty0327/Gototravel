@@ -38,8 +38,6 @@ class Result4Activity : AppCompatActivity() {
 
                     items=SpTravelWarning!!.data
 
-                    Toast.makeText(this@Result4Activity,"${items[0].country_nm}", Toast.LENGTH_SHORT).show()
-
                     //recyclerview이용하기
                     binding.re4.adapter = SpTravelWarningServiceAdapter(items)
                     binding.re4.layoutManager = LinearLayoutManager(this@Result4Activity)

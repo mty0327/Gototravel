@@ -38,10 +38,7 @@ class Result5Activity : AppCompatActivity() {
 
                 items=TravelAlarmService!!.data
 
-                Toast.makeText(this@Result5Activity, "${items[0].written_dt}", Toast.LENGTH_SHORT).show()
-
                 //recyclerview이용하기
-
                 binding.re5.adapter = TravelAlarmServiceAdapter(items)
                 binding.re5.layoutManager = LinearLayoutManager(this@Result5Activity)
                 binding.re5.setHasFixedSize(true)

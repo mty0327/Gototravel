@@ -16,7 +16,6 @@ class TravelAlarmServiceAdapter(val travelAlarmlist:MutableList<TravelAlarmItem>
         return AlarmViewHolder(view)
     }
     class AlarmViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val region_ty = itemView.findViewById<TextView>(R.id.tv_region_ty5)
         val tv_alarm_lvl = itemView.findViewById<TextView>(R.id.tv_alarm_lvl5)
         val remark = itemView.findViewById<TextView>(R.id.tv_remark5)
         val written_dt = itemView.findViewById<TextView>(R.id.tv_written_dt5)
@@ -30,7 +29,6 @@ class TravelAlarmServiceAdapter(val travelAlarmlist:MutableList<TravelAlarmItem>
         holder.tv_alarm_lvl.setText(travelAlarmlist.get(position).alarm_lvl)
         holder.remark.setText(travelAlarmlist.get(position).remark)
         holder.written_dt.setText(travelAlarmlist.get(position).written_dt)
-        holder.region_ty.setText(travelAlarmlist.get(position).region_ty)
     }
 
 

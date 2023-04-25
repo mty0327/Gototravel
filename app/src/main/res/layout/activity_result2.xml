@@ -14,7 +14,7 @@
         android:textSize="22sp"
         android:textStyle="bold"
         android:fontFamily="@font/bmpro"
-        android:text="안전공지:1.여권필요여부 2.일반여권 입국여부 3.일반여권 체류기간 4.관용여권 입국여부 5.관용여권 체류기간 6. 외교관여권 입국여부 7.외교관여권 체류기간 8.무비자 협정여부 9.비고"
+        android:text="안전공지:국가∙지역별 안전공지 목록 조회"
         android:background="@color/btn2"/>
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/re2"
